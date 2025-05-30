@@ -1,0 +1,706 @@
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+}
+
+.bg-section {
+    position: relative;
+    height: 100vh;
+    background: url('src/bg-elashian-haven.jpg') center/cover no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.bg-logo {
+    margin-top: -150px;
+    max-height: 180px;     
+}       
+
+.bg-section h1 {
+    margin: -5px 0 10px 0;
+    font-size: 4rem;
+    font-weight: bold;
+    max-width: 80vw;
+}
+
+.bg-section p {
+    margin-top: -10px;
+    font-size: 1.3rem;
+    max-width: 80vw;
+    margin: 0;
+}
+
+.wave-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-container svg {
+    display: block;
+    width: 100%; 
+    height: 100%;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 40px 0 40px 0;
+    transition: background 0.3s ease, padding 0.3s ease;
+    z-index: 1000;
+    text-align: center;
+}
+
+.nav-logo {
+    position: absolute;
+    left: 30px; 
+    top: 50%;
+    transform: translateY(-50%);
+    max-height: 150px;
+}
+
+.nav-links {
+    display: inline-block; 
+}
+
+nav a {
+    color: white;
+    margin: 0 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #bddcaf;
+}
+
+nav.transparent {
+    background: transparent;
+}
+
+nav.scrolled {
+    background: #687D31;
+    padding: 40px 0 40px 0;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* About Section */
+#about {
+    width: 99vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    text-align: center;
+    margin-top: 100px;
+}
+
+@media (min-width: 1024px) {
+    .about-container {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+/* Images */
+.about-images {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.image-small img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.image-large img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Content */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 0.8rem;
+    max-width: 500px;
+}
+
+.about-content .abouth5  {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #19350C;
+    margin-bottom: 0.3rem;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.2; 
+    margin-bottom: 0.5rem;
+}
+
+.about-content h2 span {
+    color: #687D31;
+}
+
+.about-content p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+    margin-bottom: 0.6rem; 
+}
+
+/* Button */
+.read-more {
+    background-color: #687D31;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.read-more:hover {
+    transform: translateX(5px) translateY(-5px);
+    background-color: #687D31;
+}
+
+.image-section {
+    width: 99vw;  /* Full width */
+    height: 100vh; /* Full height */
+    background-image: url('src/accomodations/camping-tent.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-main-content {
+    width: 99vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.about-main-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #687D31;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 90vw;
+    max-width: 1200px;
+    position: relative;
+}
+
+.card-wrapper {
+    width: 900px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Moving container */
+.card-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+    flex-shrink: 0;
+    opacity: 0.5;
+    transform: scale(0.9);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.card.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.card.prev,
+.card.next {
+    opacity: 0.8;
+    transform: scale(0.95);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-info {
+    padding: 12px;
+    text-align: center;
+    background: white;
+    border-radius: 5px;
+    margin-top: -10px;
+}
+
+/* Navigation Buttons */
+.about-main-content button {
+    padding: 12px 18px;
+    background-color: #687D31;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.about-main-content button:hover {
+    transform: scale(1.05) translateY(-50%);
+    background-color: #506422;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+
+/*activities section */
+.activities-container {
+    height: 99vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 110px;
+}
+
+.activities-left {
+    flex: 1;
+    max-width: 49vw;
+    padding: 20px;
+}
+
+.activities-left h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #506422;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.activities-left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.activities-left li {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.activities-left li:hover {
+    background: #506422;
+    color: white;
+    transform: scale(1.05);
+}
+
+.activities-left li::before {
+    content: "🌿"; 
+    font-size: 1.3rem;
+}
+
+.activities-left li:nth-child(2)::before { content: "🌲"; } /* Zip-lining */
+.activities-left li:nth-child(3)::before { content: "🔥"; } /* Bonfire Nights */
+.activities-left li:nth-child(4)::before { content: "🦉"; } /* Wildlife Watching */
+.activities-left li:nth-child(5)::before { content: "⛺"; } /* Camping */
+.activities-left li:nth-child(6)::before { content: "✨"; } /* Stargazing */
+
+.activities-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 45vw;
+}
+
+.image-slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+
+.image-slider {
+    display: flex;
+    gap: 10px;
+    width: max-content;
+}
+
+.image-slider img,
+.image-static img,
+.scroller__inner img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.scroller {
+    max-width: 600px;
+}
+    
+.scroller__inner {
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.scroller[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(
+        90deg,
+        transparent,
+        white 20%,
+        white 80%,
+        transparent
+    );
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+    --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+    --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+    --_animation-duration: 20s;
+}
+
+.scroller[data-speed="slow"] {
+    --_animation-duration: 60s;
+}
+
+@keyframes scroll {
+to {
+    transform: translate(calc(-50% - 0.5rem));
+}
+}
+
+:root {
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-primary-100: hsl(205, 15%, 58%);
+    --clr-primary-400: hsl(215, 25%, 27%);
+    --clr-primary-800: hsl(217, 33%, 17%);
+    --clr-primary-900: hsl(218, 33%, 9%);
+}
+
+.image-section2 {
+    width: 99vw;  
+    height: 100vh; 
+    background-image: url('src/accomodations/cabins.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#rates {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#rates h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: #506422;
+}
+
+.rate-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.rate-card {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.rate-card:hover {
+    transform: translateY(-10px);
+}
+
+.rate-card h3 {
+    font-size: 1.5rem;
+    color: #506422;
+    margin-bottom: 10px;
+}
+
+.rate-card ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.rate-card ul li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.rate-card ul li::before {
+    content: "✔";
+    color: #506422;
+    font-weight: bold;
+}
+
+.add-ons {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    border-radius: 12px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.add-ons h3 {
+    font-size: 1.5rem;
+    color: #506422;
+    margin-bottom: 10px;
+}
+
+.add-ons ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.add-ons ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.add-ons ul li span {
+    font-weight: bold;
+    color: #506422;
+}
+
+#contact {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+    padding: 100px;
+}
+
+.booking-container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px; 
+    width: 100%;
+    text-align: center;
+}
+
+.booking-container h2 {
+    margin-bottom: 25px;
+    color: #3d4c1a;
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+}
+
+input, select, textarea {
+    width: 100%;
+    margin: 6px;
+    padding: 12px 0 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 17px;
+    background-color: #f9f9f9;
+}
+
+
+#contact button {
+    background: #687D31;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+#contact button:hover {
+    background: #3d4c1a;
+    transform: scale(1.05);
+}
+
+.footer {
+    height: 50vh;
+    background: linear-gradient(to bottom, #687D31, #1b3b1a); 
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-top {
+    text-align: center;
+}
+
+.footer-top h2 {
+    color: #c2e5c0;
+    font-size: 2rem;
+}
+
+.footer-top p {
+    font-size: 1.2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1000px;
+    text-align: left;
+}
+
+.footer-section {
+    width: 45%;
+}
+
+.footer-section h3 {
+    color: #c2e5c0;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.footer-section p {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.footer a {
+    color: #c2e5c0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #a8d5ba;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}

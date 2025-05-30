@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elashian Haven</title>
+    <link rel="icon" type="image/png" href="src/elaslogo1.png">
+    <link rel="stylesheet" href="elashianhaven.css">
+    <link rel="stylesheet" href="elashianhaven-responsive.css">
+</head>
+<body>
+    <nav id="navbar" class="transparent">
+        <img src="src/elaslogo.png" alt="Logo" class="nav-logo">
+        
+        <div class="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#activities">Activities</a>
+            <a href="#rates">Rates</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="bg-section" id="home">
+        <img src="src/elaslogo1.png" alt="Logo" class="bg-logo"> 
+        <h1>Your <span style="color: #bddcaf;">Mountain</span> Escape</h1>
+        <p>A peaceful private retreat in the heart of nature</p>
+        <div class="wave-container">
+            <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path fill="#f4f4f4" fill-opacity="1" d="
+                    M0,250
+                    C150,180 250,200 350,130
+                    C450,30 550,180 700,150
+                    C850,120 900,250 1000,220
+                    C1250,180 1100,200 1440,300
+                    V400 H0 Z">
+                </path>
+            </svg>
+        </div>
+    </div>
+    <section id="about">
+        <div class="about-container">
+            <div class="about-images">
+                <div class="image-small">
+                    <img src="src/amenities/aboutUs3.jpg" alt="Machine small">
+                </div>
+                <div class="image-large">
+                    <img src="src/accomodations/aboutUs.jpg" alt="Machine large">
+                </div>
+            </div>
+            <div class="about-content">
+                <h5 class="abouth5">━━ About Us</h5>
+                <h2>Accommodations Stay in comfort while surrounded by <span>breathtaking mountain</span> views</h2>
+                <p>Dedicated space with campfire access Common shower and toilet facilities Amenities & Activities Enjoy adventure and relaxation in one place. </p>
+                <button class="read-more" onclick="location.href='#about-main-content'">━━ Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="image-section">
+
+    </section>
+
+    <section id="about-main-content" class="about-main-content">
+        <h1>Lodging Options</h1>
+        <div class="carousel-container">
+            <button class="prev-btn">← Prev</button>
+            <div class="card-wrapper">
+                <div class="card-container">
+                    <div class="card clone" data-index="-1">
+                        <img src="src/accomodations/camping-tent.jpg" alt="Lakeside Villa">
+                        <div class="card-info">
+                            <h3>Camping Area</h3>
+                            <p>Bring Your Own Tent</p>
+                        </div>
+                    </div>
+                    <div class="card" data-index="0">
+                        <img src="src/accomodations/cabins.jpg" alt="Cozy Cabin">
+                        <div class="card-info">
+                            <h3>Cabins</h3>
+                            <p>Accommodates 2 - 3 guests</p>
+                        </div>
+                    </div>
+                    <div class="card" data-index="1">
+                        <img src="src/accomodations/glamping-tents.jpg" alt="Glamping Tent">
+                        <div class="card-info">
+                            <h3>Glamping Tent</h3>
+                            <p>Accommodates 2 - 3 guests</p>
+                        </div>
+                    </div>
+                    <div class="card" data-index="2">
+                        <img src="src/accomodations/family-villa.jpg" alt="Family Villas">
+                        <div class="card-info">
+                            <h3>Family Villas</h3>
+                            <p>Accommodates 4 - 6 guests</p>
+                        </div>
+                    </div>
+                    <div class="card" data-index="3">
+                        <img src="src/accomodations/cottages.jpg" alt="Bamboo Cottages">
+                        <div class="card-info">
+                            <h3>Bamboo Cottages</h3>
+                            <p>Accommodates 2 - 3 guests</p>
+                        </div>
+                    </div>
+                    <div class="card" data-index="4">
+                        <img src="src/accomodations/camping-tent.jpg" alt="Camping Area">
+                        <div class="card-info">
+                            <h3>Camping Area</h3>
+                            <p>Bring Your Own Tent</p>
+                        </div>
+                    </div>
+                    <div class="card clone" data-index="5">
+                        <img src="src/accomodations/cabins.jpg" alt="Cozy Cabin">
+                        <div class="card-info">
+                            <h3>Cabins</h3>
+                            <p>Accommodates 2 - 3 guests</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="next-btn">Next →</button>
+        </div>
+    </section>    
+
+       
+    <section id="activities" class="activities-container">
+        <div class="activities-left">
+            <h2>Activities</h2>
+            <ul>
+                <li>Hiking Trails</li>
+                <li>Zip-lining</li>
+                <li>Bonfire Nights</li>
+                <li>Wildlife Watching</li>
+                <li>Camping</li>
+                <li>Stargazing</li>
+            </ul>
+        </div>
+    
+        <div class="activities-right">
+            <div class="scroller" data-direction="right" data-speed="slow">
+                <div class="scroller__inner">
+                  <img src="src/amenities/hiking-trails.jpg" alt="" />
+                  <img src="src/amenities/campfire.jpg" alt="" />
+                  <img src="src/amenities/hiking-trails2.jpg" alt="" />
+                  <img src="src/amenities/infinity-pool.jpg" alt="" />
+                  <img src="src/amenities/massage.jpg" alt="" />
+                  <img src="src/amenities/zipline.jpg" alt="" />
+                </div>
+            </div>
+    
+            <div class="image-static">  
+                  <img src="src/amenities/campfire-circle.jpg" alt="" />
+                  <img src="src/amenities/double-zipline.jpg" alt="" />
+                  <img src="src/amenities/massage2.jpg" alt="" />
+                  <img src="src/amenities/infinity-pool3.jpg" alt="" />
+            </div>
+    
+            <div class="scroller" data-speed="slow">
+                <ul class="tag-list scroller__inner">
+                  <img src="src/amenities/infinity-pool2.jpg" alt="" />
+                  <img src="src/amenities/campfire2.jpg" alt="" />
+                  <img src="src/amenities/hiking-trails2.jpg" alt="" />
+                  <img src="src/accomodations/camping-tent.jpg" alt="" />
+                  <img src="src/amenities/massage.jpg" alt="" />
+                  <img src="src/amenities/zipline.jpg" alt="" />
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="image-section2">
+
+    </section>
+
+    <section id="rates">
+        <div>
+        <h2>Rates</h2>
+    
+        <div class="rate-cards">
+            <div class="rate-card">
+                <h3>Day Tour Pass</h3>
+                <p><strong>8:00 AM - 6:00 PM</strong></p>
+                <ul>
+                    <li>Access to pool, hiking trails, viewing deck, and picnic huts.</li>
+                    <li>Zipline & giant swing (separate fee applies).</li>
+                </ul>
+            </div>
+    
+            <div class="rate-card">
+                <h3>Overnight Stay</h3>
+                <p><strong>Check-in: 2:00 PM | Check-out: 11:00 AM</strong></p>
+                <ul>
+                    <li>Includes full use of amenities.</li>
+                    <li>Free breakfast for overnight guests.</li>
+                </ul>
+            </div>
+    
+            <div class="rate-card">
+                <h3>Exclusive Resort Booking</h3>
+                <p><strong>For Private Events</strong></p>
+                <ul>
+                    <li>Ideal for family reunions, company retreats, and special occasions.</li>
+                    <li>Customizable packages available.</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="add-ons">
+            <h3>Add-ons</h3>
+            <ul>
+                <li>Zipline & Giant Swing: <span>₱XXX per ride</span></li>
+                <li>Massage Service: <span>₱XXX per session</span></li>
+                <li>Extra Person Charge: <span>₱XXX per head</span></li>
+            </ul>
+        </div>
+    </div>
+    </section> 
+
+    <section id="contact">
+        <div class="booking-container">
+            <h2>Book Your Stay</h2>
+            <form>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+    
+                <label for="date">Check-in Date</label>
+                <input type="date" id="date" name="date" required>
+    
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" name="guests" min="1" placeholder="Enter number of guests" required>
+    
+                <label for="package">Select Package</label>
+                <select id="package" name="package" required>
+                    <option value="day-tour">Day Tour Pass</option>
+                    <option value="overnight">Overnight Stay</option>
+                    <option value="exclusive">Exclusive Resort Booking</option>
+                </select>
+
+                <label for="message">Additional Requests</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+    
+                <button type="submit">Submit Booking</button>
+            </form>
+            </div>
+    </section>    
+    
+    <footer class="footer">
+        <div class="footer-top">
+            <h2>Contact Us</h2>
+            <p>Reach out to us anytime.</p>
+        </div>
+    
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Walk-in Guests</h3>
+                <p>Allowed for day tours (subject to availability).</p>
+    
+                <h3>Payment Methods</h3>
+                <p>Bank transfer, GCash, and credit card payments accepted.</p>
+                <p>50% down payment required to confirm bookings.</p>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><strong>Address:</strong> [Resort’s Exact Location]</p>
+                <p><strong>Phone:</strong> [Contact Number]</p>
+                <p><strong>Email:</strong> [Resort’s Email]</p>
+                <p>
+                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a> | 
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/card.js"></script>
+    <script src="js/moving-images.js"></script>
+    <script src="js/hamburger.js"></script>
+</body>
+</html>
