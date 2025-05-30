@@ -10,7 +10,7 @@ font-family: Arial, sans-serif;
 .bg-section {
     position: relative;
     height: 100vh;
-    background: url('src/bg-elashian-haven.jpg') center/cover no-repeat;
+    background: url('/src/bg-elashian-haven.jpg') center/cover no-repeat;
     color: white;
     display: flex;
     flex-direction: column;
