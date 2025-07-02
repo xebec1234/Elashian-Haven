@@ -12,10 +12,6 @@ Elashian‑Haven/
 ├── styles/ → Modular CSS for layout, themes, responsiveness
 └── README.md ← This file
 
-yaml
-Copy
-Edit
-
 ---
 
 ## ✨ Features
@@ -35,14 +31,10 @@ Explore the site locally to capture screenshots and showcase in future README up
 
 ## 🚀 Local Setup
 
-1. **Clone the repo:**
-   ```bash
+1. Clone the repo:
    git clone https://github.com/xebec1234/Elashian-Haven.git
 Open in browser:
 
-bash
-Copy
-Edit
 cd Elashian-Haven/src
 open ElashianHaven.html
 or use live-server / VS Code Live Preview for best results.
@@ -58,16 +50,14 @@ Test responsiveness and cross-browser performance
 
 Submit a pull request — all improvements welcome ✨
 
-🎯 Future Plans
-🖼️ Add image carousel for hotels & resort gallery
+## 🎯 Future Plans
+## 🖼️ Add image carousel for hotels & resort gallery
 
-🌙 Option for light/dark theme toggle
+## 🧭 Interactive booking form / contact form
 
-🧭 Interactive booking form / contact form
+## 🔧 Accessibility refinements and SEO optimization
 
-🔧 Accessibility refinements and SEO optimization
-
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 ⚛️ Vanilla JavaScript for interactivity
 
 🎨 CSS3 Flexbox & Grid for layout
@@ -76,7 +66,7 @@ Submit a pull request — all improvements welcome ✨
 
 📄 HTML5 semantic structure (in src/ElashianHaven.html)
 
-🤝 Credits & Inspiration
+## 🤝 Credits & Inspiration
 Design inspired by premium mountain resort sites
 
 Animations powered by native JS—no frameworks
